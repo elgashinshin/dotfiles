@@ -27,7 +27,7 @@ return {
         stylelint = function()
           require("null-ls").register(require("null-ls").builtins.formatting.stylelint.with({
             condition = function(utils)
-              return utils.has_file({ ".stylelintrc.json" })
+              return utils.has_file({ ".stylelintrc.json" }) or utils.has_file({ ".stylelintrc" })
             end
           }))
         end,

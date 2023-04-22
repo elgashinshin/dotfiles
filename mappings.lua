@@ -24,7 +24,7 @@ return {
       function() require("zen-mode").toggle {} end,
     },
     ["<leader>p"] = {
-      function() require("telescope").extensions.project.project {} end,
+      function() require("telescope").extensions.project.project { display_type = 'full' } end,
     },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command

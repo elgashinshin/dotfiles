@@ -7,7 +7,7 @@ return {
     -- Check supported formatters and linters
     -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/formatting
     -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
-    config.debug = true
+    -- config.debug = true
     config.sources = {
       -- Set a formatter
       -- null_ls.builtins.formatting.stylua,

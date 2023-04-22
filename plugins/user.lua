@@ -30,6 +30,7 @@ return {
         "⠀⠀⠀⢻⣿⣿⠉⠉⢹⣿⣿⠁⠀⠀⠀⠀",
         "⠀⠀⠀⠀⠉⠁⠀⠀⠀⠉⠁⠀⠀⠀⠀⠀",
       }
+      dashboard.config.layout[3].val = 1
 
       dashboard.section.header.opts.hl = "DashboardHeader"
       return dashboard
