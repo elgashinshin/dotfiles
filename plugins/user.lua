@@ -9,4 +9,30 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+  "ellisonleao/gruvbox.nvim",
+  "folke/tokyonight.nvim",
+  { "nvim-telescope/telescope-project.nvim" },
+  {
+    "goolord/alpha-nvim",
+    opts = function()
+      local path_ok, plenary_path = pcall(require, "plenary.path")
+      if not path_ok then return end
+      local dashboard = require "alpha.themes.dashboard"
+      dashboard.section.header.val = {
+        "⠀⠀⠀⠀⢰⣿⡿⠗⠀⠠⠄⡀⠀⠀⠀⠀",
+        "⠀⠀⠀⠀⡜⠁⠀⠀⠀⠀⠀⠈⠑⢶⣶⡄",
+        "⢀⣶⣦⣸⠀⢼⣟⡇⠀⠀⢀⣀⠀⠘⡿⠃",
+        "⠀⢿⣿⣿⣄⠒⠀⠠⢶⡂⢫⣿⢇⢀⠃",
+        "⠀⠈⠻⣿⣿⣿⣶⣤⣀⣀⣀⣂⡠⠊⠀⠀",
+        "⠀⠀⠀⠃⠀⠀⠉⠙⠛⠿⣿⣿⣧⠀⠀⠀",
+        "⠀⠀⠘⡀⠀⠀⠀⠀⠀⠀⠘⣿⣿⡇⠀⠀",
+        "⠀⠀⠀⣷⣄⡀⠀⠀⠀⢀⣴⡟⠿⠃⠀⠀",
+        "⠀⠀⠀⢻⣿⣿⠉⠉⢹⣿⣿⠁⠀⠀⠀⠀",
+        "⠀⠀⠀⠀⠉⠁⠀⠀⠀⠉⠁⠀⠀⠀⠀⠀",
+      }
+
+      dashboard.section.header.opts.hl = "DashboardHeader"
+      return dashboard
+    end,
+  },
 }
