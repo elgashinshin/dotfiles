@@ -11,6 +11,7 @@ return {
   -- },
   "ellisonleao/gruvbox.nvim",
   "folke/tokyonight.nvim",
+  "catppuccin/nvim",
   { "nvim-telescope/telescope-project.nvim" },
   {
     "goolord/alpha-nvim",
